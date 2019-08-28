@@ -1,0 +1,11 @@
+---
+ - hosts: all
+   tasks:
+    - name: package installation
+      yum: 
+       - name: mysql 
+         state: present
+      yum:
+       - name: httpd 
+         state: latest
+
